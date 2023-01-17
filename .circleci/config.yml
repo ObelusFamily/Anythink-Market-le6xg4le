@@ -7,6 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: change directory
+          command: cd frontend
+      - run:
           name: Install deps
           command: yarn install
       - run:
